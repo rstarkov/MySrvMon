@@ -29,6 +29,9 @@
     <DefineConstants>TRACE</DefineConstants>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="BasicSMART, Version=1.0.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\BasicSMART.1.0.1\lib\net471\BasicSMART.dll</HintPath>
+    </Reference>
     <Reference Include="RT.TagSoup, Version=1.0.1618.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\RT.TagSoup.1.0.1618\lib\net471\RT.TagSoup.dll</HintPath>
     </Reference>
@@ -46,10 +49,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Extensions.cs" />
     <Compile Include="Module.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Settings.cs" />
+    <Compile Include="SmartModule.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

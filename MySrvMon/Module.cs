@@ -18,14 +18,21 @@ namespace MySrvMon
     {
         protected class ExecuteResult
         {
-            public Status Status;
+            public Status Status { get; private set; }
             public ConsoleColoredString ConsoleReport;
             public object HtmlReport;
+
+            public void UpdateStatus(Status status)
+            {
+                if (Status < status)
+                    Status = status;
+            }
         }
 
         [ClassifyIgnore]
         private ExecuteResult _result;
 
+        public abstract string Name { get; }
         protected abstract ExecuteResult ExecuteCore();
 
         public Status Status => _result == null ? throw new InvalidOperationException() : _result.Status;
