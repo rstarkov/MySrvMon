@@ -49,6 +49,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DiskSpaceModule.cs" />
     <Compile Include="Extensions.cs" />
     <Compile Include="Module.cs" />
     <Compile Include="Program.cs" />

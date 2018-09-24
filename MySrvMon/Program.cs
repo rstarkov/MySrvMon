@@ -4,7 +4,6 @@ using System.Linq;
 using System.Reflection;
 using RT.Util;
 using RT.Util.Consoles;
-using RT.Util.ExtensionMethods;
 using RT.Util.Serialization;
 
 namespace MySrvMon
